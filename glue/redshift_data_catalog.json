@@ -1,0 +1,99 @@
+{
+    "Table": {
+        "Name": "dev_public_amazon_sales",
+        "DatabaseName": "amazon_glue_redshift_db",
+        "Owner": "owner",
+        "CreateTime": "2024-07-29T21:05:51+05:30",
+        "UpdateTime": "2024-07-31T12:46:17+05:30",
+        "LastAccessTime": "2024-07-31T12:46:17+05:30",
+        "Retention": 0,
+        "StorageDescriptor": {
+            "Columns": [
+                {
+                    "Name": "actual_price",
+                    "Type": "string",
+                    "Comment": ""
+                },
+                {
+                    "Name": "img_link",
+                    "Type": "string",
+                    "Comment": ""
+                },
+                {
+                    "Name": "user_ids",
+                    "Type": "string",
+                    "Comment": ""
+                },
+                {
+                    "Name": "product_id",
+                    "Type": "string",
+                    "Comment": ""
+                },
+                {
+                    "Name": "rating",
+                    "Type": "double",
+                    "Comment": ""
+                },
+                {
+                    "Name": "discount_percentage",
+                    "Type": "int",
+                    "Comment": ""
+                },
+                {
+                    "Name": "category",
+                    "Type": "string",
+                    "Comment": ""
+                },
+                {
+                    "Name": "product_name",
+                    "Type": "string",
+                    "Comment": ""
+                },
+                {
+                    "Name": "discounted_price",
+                    "Type": "string",
+                    "Comment": ""
+                },
+                {
+                    "Name": "rating_count",
+                    "Type": "int",
+                    "Comment": ""
+                }
+            ],
+            "Location": "dev.public.amazon_sales",
+            "Compressed": false,
+            "NumberOfBuckets": -1,
+            "SerdeInfo": {
+                "Parameters": {}
+            },
+            "BucketColumns": [],
+            "SortColumns": [],
+            "Parameters": {
+                "UPDATED_BY_CRAWLER": "amazon_sales_redshift_crawler",
+                "CrawlerSchemaSerializerVersion": "1.0",
+                "connectionName": "Redshift connection",
+                "compressionType": "none",
+                "CrawlerSchemaDeserializerVersion": "1.0",
+                "classification": "redshift",
+                "typeOfData": "table"
+            },
+            "StoredAsSubDirectories": false
+        },
+        "PartitionKeys": [],
+        "TableType": "EXTERNAL_TABLE",
+        "Parameters": {
+            "UPDATED_BY_CRAWLER": "amazon_sales_redshift_crawler",
+            "CrawlerSchemaSerializerVersion": "1.0",
+            "connectionName": "Redshift connection",
+            "compressionType": "none",
+            "CrawlerSchemaDeserializerVersion": "1.0",
+            "classification": "redshift",
+            "typeOfData": "table"
+        },
+        "CreatedBy": "arn:aws:sts::533267281673:assumed-role/spark_glue_project/AWS-Crawler",
+        "IsRegisteredWithLakeFormation": false,
+        "CatalogId": "533267281673",
+        "VersionId": "7",
+        "IsMultiDialectView": false
+    }
+}
